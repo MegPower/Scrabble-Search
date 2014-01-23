@@ -1,0 +1,13 @@
+The scrabble word finder begins with a WordList class. This class takes a string as an argument and could throw a FileNotFoundException. The first method is for the length. We ask the user for a length of their word and search the dictionary.txt file for all words of that length. This is done by comparing the word length to n, the given length of the word. If they are equal, the word is added to the ArrayList foundWords. The method returns found words.
+
+The startsWith method runs a similar test. It first checks the first letter of the word, then checks the length. Searching by the letter first seemed like a faster way to use this method since it will automatically eliminate a lot of the words that way. 
+
+The next method checks for the length of the word and if the word includes a given character, but cannot start with the given character. Unlike the startsWith method, this method checks the length first. The characters of a word of the length is done with a for loop moving charAt through each character. If the word passes all three if statements, it gets saved to foundWords.
+
+VowelHeavy counts the numbers of vowels of a word of the given length. Unlike the previous method, the individual characters are checked by storing them in a temporary string test and then seeing if they are equal to a string that is a vowel. If it is, the variable vowels increments by 1. That is the variable tested to see if the number of vowels is greater than or equal to the given integer the user provides. If that is true and the length is the same of the provided integer, the word is added to foundWords. 
+
+The final method, multiLetter, searches for words in which a given character appears a given number of times. The first step of this is to see if the word has any occurrences of a given character. If it does, the variable, incldOccurs increments by one. Then if the number of occurrences is greater than or equal to m, the number of times requested, the word is added to FoundWords. 
+
+The class is tested with a main method that pulls in the file in a try and has a catch, should the dictionary file not be available. If not available, the class will throw a FileNotFoundException and exit gracefully.
+
+The methods are run based on an input response, then the parameters passed through input methods. It is in the tester that the foundWords array is printed and closed. For simplicity sake, there is only 1 output file for any methods that get invoked. To write a cleaner test class, the output prints the result from whatever method is called. The downside of this is that the array gets printed in one line which makes it harder to read. 
