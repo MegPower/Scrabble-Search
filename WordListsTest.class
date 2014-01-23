@@ -1,0 +1,14 @@
+/* default package */
+
+public class WordListsTest extends java.lang.Object
+{
+    /* Constructors */
+    public WordListsTest() {
+    }
+
+
+    /* Methods */
+    public static void main(java.lang.String[]) throws java.io.FileNotFoundException {
+    }
+
+}
