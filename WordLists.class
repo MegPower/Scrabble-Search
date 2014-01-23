@@ -1,0 +1,29 @@
+/* default package */
+
+public class WordLists extends java.lang.Object
+{
+    /* Fields */
+    java.lang.String fileName;
+
+    /* Constructors */
+    public WordLists(java.lang.String) throws java.io.FileNotFoundException {
+    }
+
+
+    /* Methods */
+    public java.util.ArrayList lengthN(int) throws java.io.FileNotFoundException {
+    }
+
+    public java.util.ArrayList startsWith(int, char) throws java.io.FileNotFoundException {
+    }
+
+    public java.util.ArrayList containsLetter(int, char) throws java.io.FileNotFoundException {
+    }
+
+    public java.util.ArrayList vowelHeavy(int, int) throws java.io.FileNotFoundException {
+    }
+
+    public java.util.ArrayList multiLetter(int, char) throws java.io.FileNotFoundException {
+    }
+
+}
